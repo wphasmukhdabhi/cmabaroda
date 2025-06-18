@@ -1,0 +1,135 @@
+/*
+Theme Name: Hello Elementor Child
+Template: hello-elementor
+Author: Hasmukh Dabhi
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Version: 1.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: hello-elementor
+Tags: accessibility-ready, flexible-header, custom-colors, custom-menu, custom-logo, featured-images, rtl-language-support, threaded-comments, translation-ready,
+
+*/
+
+/* @import url("../hello-elementor/style.css"); */
+/* Optional */
+
+.member-scroll-box {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #2980b9;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.scroll-content {
+    animation: scrollUp 20s linear infinite;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.content-area {
+    width: 70%;
+    float: left;
+}
+
+.right-sidebar {
+    width: 30%;
+    float: right;
+}
+
+/* News Section */
+.news-ticker-box {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #1976a4;
+  padding: 10px;
+  background: #fff;
+  /* border-radius: 0 0 6px 6px; */
+  margin-right: 50px;
+}
+
+.news-ticker-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  animation: scrollUp 15s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% { top: 100%; }
+  100% { top: -100%; }
+}
+
+.news-ticker-item {
+  margin-bottom: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+/* new code news section */
+.news-ticker-box {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  overflow: hidden;
+  border: 2px solid #0073aa;
+  border-radius: 10px;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.news-ticker-list {
+  display: flex;
+  flex-direction: column;
+  animation: scrollNews 10s linear infinite;
+}
+
+.news-ticker-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.news-ticker-item strong {
+  display: block;
+  color: #0073aa;
+  font-size: 14px;
+}
+
+@keyframes scrollNews {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
