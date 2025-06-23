@@ -16,52 +16,53 @@ Tags: accessibility-ready, flexible-header, custom-colors, custom-menu, custom-l
 /* Optional */
 
 .member-scroll-box {
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #2980b9;
-    padding: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background: #fff;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid #2980b9; */
+  padding: 10px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  background: #fff;
 }
 
 .scroll-content {
-    animation: scrollUp 20s linear infinite;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  animation: scrollUp 20s linear infinite;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .member {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .member img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 @keyframes scrollUp {
-    0% {
-        transform: translateY(100%);
-    }
+  0% {
+    transform: translateY(100%);
+  }
 
-    100% {
-        transform: translateY(-100%);
-    }
+  100% {
+    transform: translateY(-100%);
+  }
 }
+
 .content-area {
-    width: 70%;
-    float: left;
+  width: 70%;
+  float: left;
 }
 
 .right-sidebar {
-    width: 30%;
-    float: right;
+  width: 30%;
+  float: right;
 }
 
 /* News Section */
@@ -84,8 +85,13 @@ Tags: accessibility-ready, flexible-header, custom-colors, custom-menu, custom-l
 }
 
 @keyframes scrollUp {
-  0% { top: 100%; }
-  100% { top: -100%; }
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: -100%;
+  }
 }
 
 .news-ticker-item {
@@ -129,7 +135,19 @@ Tags: accessibility-ready, flexible-header, custom-colors, custom-menu, custom-l
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-100%);
   }
 }
+
+/* h5 {
+  font-size: 1.25rem;
+  background: #1B78A2;
+  color: white !important;
+  padding: 10px !important;
+  margin-right: 74px !important;
+  margin-bottom: 0px ! important;
+  margin-top: 20px ! important;
+  border-radius: 0px ! important;
+} */
